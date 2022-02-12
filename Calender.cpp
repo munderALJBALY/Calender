@@ -264,14 +264,6 @@ cout << "maxdays = " << maxdays << "| last_pos = " << week_position <<" startday
                     beb();
                     // short_test();
                 }
-                // while (daycount > 1){ // daycount = 28 | 29 | 30 | 31
-                //     if (week_position == 0)
-                //         week_position = 7;
-                //     else
-                //         --week_position;
-                //     daycount--;
-                // }
-                // week_position = ((findMonthDays(month, year)) + last_position) % 7 ;
                 last = last_position; // 1
                 last_position = last - (findMonthDays(month, year) % 7);
                 if(last_position == 0){last_position = 7;}
